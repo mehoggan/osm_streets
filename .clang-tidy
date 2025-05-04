@@ -1,0 +1,37 @@
+Checks: >
+    -*,
+    bugprone-argument-comment,
+    bugprone-bool-pointer-implicit-conversion,
+    bugprone-suspicious-string-compare,
+    bugprone-undelegated-constructor,
+    bugprone-unused-raii,
+    bugprone-use-after-move,
+    google-build-namespaces,
+    llvm-header-guard,
+    llvm-namespace-comment,
+    misc-definitions-in-headers,
+    misc-uniqueptr-reset-release,
+    modernize-concat-nested-namespaces,
+    modernize-make-unique,
+    modernize-use-nullptr,
+    modernize-use-override,
+    performance-for-range-copy,
+    performance-move-constructor-init,
+    performance-unnecessary-copy-initialization,
+    readability-const-return-type,
+    readability-redundant-preprocessor,
+    readability-redundant-smartptr-get,
+    readability-static-accessed-through-instance,
+    readability-identifier-naming,
+    readability-identifier-length
+CheckOptions:
+  - key:             llvm-namespace-comment.ShortNamespaceLines
+    value:           40
+  - key:             llvm-namespace-comment.SpacesBeforeComments
+    value:           2
+  - key:             readability-identifier-length.MinimumVariableNameLength
+    value:           4
+  - key:             readability-identifier-naming.FunctionCase
+    value:           camelBack
+  - key:             readability-identifier-naming.VariableCase
+    value:           lower_case
